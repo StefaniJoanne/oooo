@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+  .top{
+            width: 100%;
+            height: 6%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-image: url(./oliva/娅top.png);
+            background-size: cover;
+            background-position: 130px -350px;
+            /* position: fixed; */
+          
+        }
+        .top a{
+            font-size: 36px;
+            width: 100%;
+            height: 100%;
+        }
+        a{
+        text-decoration: none;
+        color: black;
+        }
+        .top div{
+            /* height: 65%; */
+            background-color: aliceblue;
+            opacity: 0.5;
+            /* padding-top: 11%; */
+            text-align: center;
+        }
+        .top div:hover{
+        background-color: rgb(238, 161, 191);
+        opacity: 1;
+        box-shadow: 4px 4px 8px;
+        }
+        .main{
+            width: 100%;
+            height: 9100vw;
+
+            background-image: url(./oliva/娅蝴蝶.jpg);
+            background-size: cover;
+            background-position: 0 -100px;
+
+            position: relative;
+            top: 0;
+        
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 600px;
+            justify-content: space-between; */
+            
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            /* transition:  all 5s ease; */
+        }
+        #SOUR{
+            position: absolute;
+            top: 70px;
+            left: 200px;
+        }
+        #GUST{
+            position: absolute;
+            top: 720px;
+            left: 200px;
+        }
+        .main a{
+            text-align: center;
+            color: aliceblue;
+            font-size: 36px;
+        }
+        /* span{
+            display: inline-block;
+            align-items: center;
+        } */
+        #list1{
+         
+            padding: 0;
+            
+            position: absolute;
+            /* position: fixed; */
+            top: -20px;
+            left: 900px;
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            padding: 2%;
+        }
+        #list2{
+         
+         padding: 0;
+         
+         position: absolute;
+         /* position: fixed; */
+         top: -20px;
+         left: 900px;
+         width: 100%;
+         height: 100%;
+     }
+    </style>
+</head>
+<body>
+    <div class="wap">
+        <div class="top">
+            <div class="homebox"> <a href="./index.html" id="home" target="_blank" id="article">首页</a></div>
+            <div class="albumbox"><a href="./专辑.html" id="album" target="_blank" id="article">专辑</a></div>
+            <div class="articlebox"><a href="./博文.html" target="_blank" id="article">博文</a></div>
+            <div class="contactbox"><a href="./联系.html" id="contact">联系我~</a></div> 
+            </div>
+            <div class="main">
+                <div id="SOUR">
+                 <img src="./娅歌封面/SOUR.jpg" alt="">
+                    <ul id="list1">
+                        <li>brutal</li>
+                        <li>traitor</li>
+                        <li>drivers licensee</li>
+                        <li>1 step forward,3 step back</li>
+                        <li>deja vu</li>
+                        <li>good 4 u</li>
+                        <li>enough for you</li>
+                        <li>happier</li>
+                        <li>jealousy,jealousy</li>
+                        <li>favorite crime</li>
+                        <li>hope ur ok </li>
+                    </ul>
+                    <!-- <div><a href=""> <span>SOUR</span> </a></div> -->
+                </div>
+                <div id="GUST">
+                    <img src="./娅歌封面/GUTS.jpg" alt="">
+                    <ul id="list2">
+                        <li>all-american bitch</li>
+                        <li>bad idea right</li>
+                        <li>vampire</li>
+                        <li>lacy</li>
+                        <li>ballad of a homeschooled girl</li>
+                        <li>making the bed</li>
+                        <li>logical</li>
+                        <li>get him back</li>
+                        <li>love is embarrassing</li>
+                        <li>the grudge</li>
+                        <li>pretty is not pretty</li>
+                        <li>teenage dream</li>
+                        <li>girl l have always been</li>
+                        <li>scared of my guitar</li>
+                        <li>obsessed</li>
+                        <li>stranger</li>
+                        <li>so american</li>
+                    </ul>
+                   <!-- <div> <a href="">GUST</a></div> -->
+                </div>
+            </div>
+    </div>
+    <!-- <script>
+        var SOUR = document.getElementById("SOUR");
+        var GUST = document.getElementById("GUST");
+        var list1 = document.getElementById("list1");
+        var list2 = document.getElementById("list2");
+        SOUR.addEventListener("click",function(){
+            SOUR.style.display = "none";
+            list1.style.display = "block";
+        })
+    </script> -->
+    <!-- <script>
+        const sour = document.getElementById('SOUR');
+        const list1 = document.getElementById('list1');
+let position = 0;
+let isAnimating = false;
+
+     sour.addEventListener('click', () => {
+    if (!isAnimating) {
+        isAnimating = true;
+        list1.style.display = 'block';
+        const animate = () => {
+            position -= 1;
+            sour.style.transform = `translateX(${position}px)`;
+            if (position > - (sour.offsetHeight - 300)) { // 假设容器高度是300px，可根据实际调整
+                requestAnimationFrame(animate);
+            } else {
+                isAnimating = false;
+            }
+        };
+        requestAnimationFrame(animate);
+    }
+});
+    </script> -->
+</body>
+</html>

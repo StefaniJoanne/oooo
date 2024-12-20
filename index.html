@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .slider-container div{
+            display: flex;
+            align-items: center;
+        
+        }
+        .slider img{
+            width: 600px;
+            height: 600px;
+            margin-left: 10px;
+            margin-right: 10px;
+      
+            animation: slider 25s infinite;
+            box-shadow: 5px 5px 2px;
+            /* position: relative;
+            top: 100px; */
+           /* margin-bottom: 200px; */
+        }
+
+        .slider div{
+            
+            margin: 240px 0;
+            
+            
+        }
+   .slider .img{
+       height: 0;
+   }
+        .slider{
+            width: 620px;
+            height: 700px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: 9fr,1fr;
+            position: relative;
+            top: 0px;
+            
+            overflow: hidden;
+        }
+        .img div{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        @keyframes slider{
+            0% {transform: translateX(0);}
+            3% {transform: translateX(0);}
+            /* 25% {transform: translateX(-100%);}
+            40% {transform: translateX(-100%);}
+            50% {transform: translateX(-200%);}
+            70% {transform: translateX(-200%);}
+            750% {transform: translateX(-300%);} */
+            
+            95% {transform: translateX(-3730px);}
+            100% {transform: translateX(-3730px);}
+           
+        }
+        
+        
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .wap{
+            
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .left{
+            width: 30%;
+            height: 100%;
+           
+            /* background-image: url(./娅left.png);
+            background-position: -40px 10px; */
+            /* background-image: url(./娅吐舌pink.jpg);
+            background-position: -40px 10px; */
+            /* background-image: url(./黑石背景.png); */
+            /* background-position: -180px 0; */
+            background-image: url(./oliva/黑幕布背景.png);
+           
+             background-size: cover;
+             position: relative;
+        }
+        .wall{
+            width: 100%;
+            height: 20%;
+            background-image: url(./oliva/黑石背景.png);
+            background-size: cover;
+            background-position: 0 -240px;
+            
+
+        }
+        .pic{
+            border: 1px solid none;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-image: url(./oliva/娅头像.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 130px;
+        }
+        .id{
+           width: 150px;
+           height: auto;
+           font-size: 20px;
+           position: absolute;
+           top: 190px;
+           left: 110px;
+           color: rgb(255, 255, 255);
+
+        }
+        .sign{
+            width: 25px;
+            height: 25px;
+            background-image: url(./oliva/娅标.png);
+            background-size: cover;
+            position: absolute;
+            top: 192px;
+            left: 260px;
+        }
+        .follwer{
+           width: 150px;
+           height: auto;
+           font-size: 20px;
+           position: absolute;
+           top: 220px;
+           left: 110px;
+           color: rgb(255, 255, 255);
+
+        }
+        .fans{
+           width: 150px;
+           height: auto;
+           font-size: 20px;
+           position: absolute;
+           top: 190px;
+           left: 330px;
+           color: rgb(255, 255, 255);
+
+        }
+        .qianming{
+           width: 100%;
+           height: auto;
+           font-size: 16px;
+           position: absolute;
+           top: 250px;
+           /* left: 330px; */
+           color: rgb(255, 255, 255);
+
+        }
+        
+        .left a{
+            color: rgb(255, 255, 255);
+        }
+        .right{
+            width: 70%;
+            height: 100%;
+            /* background-color: rgb(152, 28, 28); */
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .top{
+            width: 100%;
+            height: 10%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-image: url(./oliva/娅top.png);
+            background-position: 100px -170px;
+            /* position: fixed; */
+        }
+        .top a{
+            font-size: 36px;
+            width: 100%;
+            height: 100%;
+            padding: 20%;
+        }
+        a{
+        text-decoration: none;
+        color: black;
+        }
+        .top div{
+            height: 65%;
+            background-color: aliceblue;
+            opacity: 0.5;
+            padding-top: 11%;
+            text-align: center;
+        }
+        .top div:hover{
+        background-color: rgb(238, 161, 191);
+        opacity: 1;
+        box-shadow: 4px 4px 8px;
+        }
+         .slider-container{
+             background-image: url(./oliva/娅蝴蝶.jpg);
+             height: 90%;
+             width: 100%;
+             background-size: contain;
+             background-position: 0 -160px;
+         }
+         .audio{
+             position: relative;
+             top: 720px;
+             left: 430px;
+         
+         }
+         #pause{
+             width: 50px;
+             height: 50px;
+             border: 1px solid none;
+             border-radius: 50%;
+             box-shadow: 2px 2px 4px;
+             background-color: brown;
+             perspective: 600px;
+             transform: translateZ(100px);
+             text-align: center;
+         }
+         .div1{
+            width: 100%;
+            height: auto;
+            font-size: 18px;
+            position: absolute;
+            top: 290px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 20px;
+            grid-template-rows: auto;
+            color: rgb(255, 255, 255);
+         }
+         .div1 a{
+             border: 1px black solid;
+            
+         }
+         .div1 a:hover{
+          background-color: rgb(106, 46, 166);
+         }
+         /* #minzu{
+
+             width: 50%;
+             height: auto;
+      
+         }
+         #country{
+             width: 50%;
+             height: auto;
+         } */
+         #relation{
+            position: absolute;
+            top: 460px;
+            color: aliceblue;
+            font-size: 24px;
+         }
+        .relation{
+            width: 100%;
+     
+            font-size: 18px;
+            position: absolute;
+            top: 500px;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+
+        .relation img{
+            border: 1px solid none;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wap">
+        <div class="left">
+            <div class="wall"></div>
+            <div class="pic"></div>
+            <div class="id">Olivia Rodrigo</div>
+            <div class="sign"></div>
+            <div class="follwer">关注：<a href="">0</a></div>
+            <div class="fans">粉丝：<a href="">1300万</a></div>
+            <div class="qianming">个性签名：高新医院 关系一样 管弦音乐 贡献娅颜</div>
+            <div class="div1">
+                <span>种族：亚裔</span> 
+                <span>国家：美国</span> 
+                <span>出生日期： 2003.2.20</span>
+                <span>星座：双鱼座</span>
+                <span>身高： 165cm</span>
+                <span>代表作：<a href="">SOUR</a> <a href="">GUTS</a></span>
+             </div>
+             <div id="relation">人物关系：</div>
+             <div class="relation">
+                 <!-- <div>人物关系：</div>
+                 <div></div> -->
+                 <div>
+                     <a href=""><img src="./oliva/chappell.jpg" alt=""></a>
+                     <div><a href="">女友：chappell</a></div>
+                </div>
+                 <div>
+                     <a href=""><img src="./oliva/Louis.jpg" alt=""></a>
+                     <div><a href="">男友：Louis</a></div>
+                </div>
+                 <div>
+                     <a href=""><img src="./oliva/Talor.jpg" alt=""></a>
+                     <div><a href="">后妈：Taylor Swift</a></div>
+                </div>
+                 <div>
+                     <a href=""><img src="./oliva/Sabrina.jpg" alt=""></a>
+                     <div><a href="">that blonde gril：Sabrina</a></div>
+                </div>
+                 <div>
+                     <a href=""><img src="./oliva/Billie.jpg" alt=""></a>
+                     <div><a href="">讨厌：Billie</a></div>
+                </div>
+                 <div>
+                     <a href=""><img src="./oliva/胡子瑞.jpg" alt=""></a>
+                     <div><a href="">C选闺蜜：胡紫蕊</a></div>
+                </div>
+             </div>
+        </div>
+        <div class="right">
+            <div class="top">
+               <div class="homebox"> <a href="./index.html" id="home" target="_blank" id="article">首页</a></div>
+               <div class="albumbox"><a href="./专辑.html" id="album" target="_blank" id="article">专辑</a></div>
+               <div class="articlebox"><a href="./博文.html" target="_blank" id="article">博文</a></div>
+               <div class="contactbox"><a href="./联系.html" id="contact">联系我~</a></div> 
+            </div>
+            <div class="slider-container">
+            <div class="audio"><audio autoplay  preload="auto"   controls loop src="./oliva/Olivia Rodrigo - drivers license.mp3"></audio></div>
+                
+                    <!-- <div id="pause" onclick="pause()">stop</div> -->
+         
+                <div class="slider"> 
+                    <!-- <div class="audio"><audio autoplay  preload="auto"   controls loop src="./oliva/Olivia Rodrigo - drivers license.mp3"></audio></div> -->
+                    <div class="img">
+                        <div><a href=""><img src="./娅歌封面/vampire.jpg" alt=""></a></div>
+                        <!-- <div><a href="">vampire</a></div> -->
+                    </div>
+                    <div class="img">
+                        <a href=""><img src="./娅歌封面/GUTS.jpg" alt=""></a>
+                    </div>
+                    <div class="img">
+                        <a href=""><img src="./娅歌封面/bir.jpg" alt=""></a>
+                    </div>
+                    <div class="img">
+                        <a href=""><img src="./娅歌封面/deja vu.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <a href=""><img src="./娅歌封面/driver license.jpg" alt="">
+                    </div>
+                    <div class="img"><a href=""><img src="./娅歌封面/good 4 u.jpg" alt="">
+                    </div>
+                    <div class="img"><a href=""><img src="./娅歌封面/SOUR.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    //    function pause()
+    //    {document.querySelector("audio").pause();}
+   </script>
+</body>
+</html>
